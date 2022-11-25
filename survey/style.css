@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+    margin: 0;
+}
+  
+
+ body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: darkblue;
+    background-image: linear-gradient( 115deg, rgba(43, 43, 150, 0.8), rgba(112, 112, 177, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    margin: 1.125rem auto 0 auto;
+}
+
+@media (max-width: 576px) {
+    .container {
+      max-width: 480px;
+      padding: 1rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+
+.header {
+    padding: 0 1rem;
+    margin: 2rem auto 0 auto;
+    width: 100%;
+}
+
+form {
+    background: rgba(3, 3, 36, 0.863);
+    border-radius: 2px;
+    padding: 1rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group {
+    margin: 0 auto 1rem auto;
+    padding: 0.25rem;
+}
+
+.form-control {
+    width: 100%;
+    height: 2.35rem;
+    border-radius: 5px;
+    display: block;
+    border: 1px solid #ced4da;
+    color: gray;
+    padding: 0.5rem 0.75rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.submit-button {
+    background-color: rgb(85, 199, 85);
+    color: white;
+    height: 3rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+    border: none;
+  }
+
+.input-radio,
+.input-checkbox {
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+    margin-right: 0.75rem;
+    display: inline-block;
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  
+  p {
+    font-size: 1.125rem;
+  }
+  
+  h1,
+  p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .clue {
+    margin-left: 0.2rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+  }
+
+  .description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+  
+  .input-textarea {
+    width: 100%;
+    min-height: 180px;
+    padding: 0.5rem;
+    resize: none;
+  }
